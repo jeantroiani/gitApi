@@ -5,15 +5,13 @@ $(document).ready(function(){
 
 		$.get(url,function(user){
 
-			$('<li>' + ('<img src='+user.avatar_url+'>') + ('<spam id="login">'+ 'User: '+user.login+'</spam>') + '<spam id="repo">'+'Repos: '+(user.public_repos)+"</spam>" + '</li>').prependTo('ul');
+			$('<li>' + ('<img src='+ user.avatar_url + '>') + ('<spam id="login">' + 'User: ' + user.login + '</spam>') + '<spam id="repo">' + 'repos: '+ (user.public_repos) + "</spam>" + '</li>').appendTo('ul');
 
-
-
-		}).fail(function(){
-			alert('invalid username' + $('#username').val());
-		}).always(function(){
-			$('#username').val('')
-		})
+			}).fail(function(){
+			alert('invalid username' + " "+ $('#username').val());
+				}).always(function(){
+					$('#username').val('')
+			})
 
 	});
 });
