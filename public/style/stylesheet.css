@@ -1,0 +1,77 @@
+body{
+	background-color: lightblue;
+}
+
+li{
+	margin: 5px;
+	background-color: #116BCE;
+	width: 350px;
+	height: 60px;
+	border-radius: 30px;
+
+	list-style-type: none;
+
+
+}
+
+h1{
+font-family: helvetica;
+}
+
+form{
+	position: relative;
+	left: 70px;
+	width: 300px;
+}
+
+form input{
+	font-size: 1em;
+	height: 20px;
+	border-radius: 4px;
+	border: none;
+
+}
+
+img{
+	height: 50px;
+	width:50px;
+	border-radius: 30px;
+	position: relative;
+	top: 5px;
+	left: 5px;
+	float: left;
+
+}
+
+#login {
+
+	width: 200px;
+	font-size:20px;
+	font-family: helvetica;
+	position: relative;
+	bottom: 0px;
+	color: white;
+	margin-top:5px;
+	float: right;
+	left: -90px;
+
+}
+#repo{
+	width: 200px;
+	font-size:20px;
+	font-family: helvetica;
+	position: relative;
+	left: -90px;
+	color: white;
+	margin-top:5px;
+	float:right;
+
+}
+
+
+
+.container:after {
+  content:"";
+  display:table;
+  clear:both;
+}
